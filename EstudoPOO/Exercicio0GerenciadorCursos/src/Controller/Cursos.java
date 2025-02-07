@@ -33,6 +33,18 @@ public class Cursos {
             System.out.println(i+"."+aluno.getNome());
             i++;
         }
+
         //Exibir o status do aluno, se ele está aprovado ou reprovado
+        public void exibirStatusAluno() {
+            int i = 1;
+        for (Aluno aluno : alunos) {
+            if (aluno.getNota()=> 6) {
+                System.out.println(i +"."+ aluno.getNota()+"| Aprovado");
+            } else
+            System.out.println(i+"."+ aluno.getNota()+"|Reprovado");
+            i++;
+        }
+        }
+
     }
 }
