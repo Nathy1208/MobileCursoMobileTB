@@ -33,11 +33,11 @@ public class App {
             switch (operacao) {
                 case 1: //Adicionar Aluno
                     System.out.println("Informe o nome do Aluno");
-                    String nomeA = sc.nextLine();
+                    String nomeA = sc.next();
                     System.out.println("Informe o CPF do Aluno");
-                    String cpfA = sc.nextLine();
+                    String cpfA = sc.next();
                     System.out.println("Informe o número de matrícula");
-                    String matriculaA = sc.nextLine();
+                    String matriculaA = sc.next();
                     System.out.println("Informe a nota do Aluno");
                     double notaA = sc.nextDouble();
                     Aluno aluno = new Aluno(nomeA, cpfA, matriculaA, notaA);
@@ -61,6 +61,7 @@ public class App {
             }
             
         }
+        sc.close();
     }
 
 }        
