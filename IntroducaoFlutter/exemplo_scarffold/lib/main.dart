@@ -16,22 +16,33 @@ class MyApp extends StatelessWidget{
         appBar: AppBar(title: Text("Exemplo AppBar"),
         backgroundColor: Colors.blue,) ,
         //Corpo do aplicativo
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Icon(Icons.person),
-                Text("Coluna 2"),
-                Text("Coluna 3"),
-              ],
-            ),
-            Text("Linha 2"),
-            Text("Linha 3")
-          ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Stack(alignment: Alignment.center,
+                  children: [
+                    Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20), color: Colors.amber),
+                    ),
+                    Icon(Icons.person)
+                  ],),
+                  Text("Coluna 2"),
+                  Text("Coluna 3"),
+                ],
+              ),
+              Text("Linha 2"),
+              Text("Linha 3")
+            ],
+          ),
         ),
         //Barra lateral (menu Hamburguer)
         drawer:Drawer(child: ListView(
