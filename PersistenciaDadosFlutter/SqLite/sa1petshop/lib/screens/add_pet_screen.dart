@@ -66,6 +66,7 @@ class _AddPetScreenState extends State<AddPetScreen> {
                   validator: (value) => value!.isEmpty ? "Campo não Preenchido!!!": null,
                   onSaved: (value) => _telefoneDono = value!,
                 ),
+                ElevatedButton(onPressed: _salvarPet, child: Text("Salvar"))
               ],
             )),
           ),
