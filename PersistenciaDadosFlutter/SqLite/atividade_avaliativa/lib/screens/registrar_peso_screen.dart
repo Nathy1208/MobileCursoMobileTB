@@ -26,12 +26,10 @@ class _RegistrarPesoScreenState extends State<RegistrarPesoScreen> {
       lastDate: DateTime.now(),
     );
 
-    if (selecionada != null) {
-      setState(() {
-        dataController.text = DateFormat('dd/MM/yyyy').format(selecionada);
-      });
+    setState(() {
+      dataController.text = DateFormat('dd/MM/yyyy').format(selecionada);
+    });
     }
-  }
 
   @override
   Widget build(BuildContext context) {

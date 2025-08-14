@@ -28,12 +28,10 @@ class _CadastroPerfilScreenState extends State<CadastroPerfilScreen> {
       firstDate: DateTime(1900),
       lastDate: DateTime.now(),
     );
-    if (selecionada != null) {
-      setState(() {
-        dataNascimentoController.text = DateFormat('dd/MM/yyyy').format(selecionada);
-      });
+    setState(() {
+      dataNascimentoController.text = DateFormat('dd/MM/yyyy').format(selecionada);
+    });
     }
-  }
 
   @override
   Widget build(BuildContext context) {
