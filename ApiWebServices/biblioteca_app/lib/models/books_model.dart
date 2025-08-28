@@ -1,4 +1,4 @@
-class BooksModel {
+class BookModel {
   //atributos
   final String? id;
   final String title;
@@ -6,28 +6,26 @@ class BooksModel {
   final bool avaliable;
 
   //construtor
-  BooksModel({
-  required this.id,
-  required this.title,
-  required this.author,
-  required this.avaliable
+  BookModel({
+    this.id,
+    required this.title,
+    required this.author,
+    required this.avaliable
   });
 
-  //métodos
-  //toJson
-  Map<String,dynamic> toJson() => {
+  // métodos ToMap e FromMap
+  Map<String,dynamic> toMap() =>{
     "id":id,
     "title":title,
     "author":author,
-    "avaliable": avaliable
+    "avaliable":avaliable
   };
-   
 
-  //fromJson
-  // factory BooksModel.fromJson(Map<String,dynamic> json) => BooksModel(
-  //   id: json["id"].toString(),
-  //   title: json["title"].toString(), 
-  //   author: json["author"].toString(),
-  //   avaliable: json["avaliable"].toBool());                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           }
+  factory BookModel.fromMap(Map<String,dynamic> map)=> 
+  BookModel(
+    id: map["id"].toString(),
+    title: map["title"].toString(), 
+    author: map["author"].toString(), 
+    avaliable: map["avaliable"] == true ? true : false);
 
 }
