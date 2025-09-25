@@ -4,7 +4,7 @@ class Movie {
   //atrib.
   final int id;
   final String title;
-  final String posterpath;
+  final String posterPath;
 
   double rating;
 
@@ -12,7 +12,7 @@ class Movie {
   Movie({
     required this.id,
     required this.title,
-    required this.posterpath,
+    required this.posterPath,
     this.rating = 0.0
   });
 
@@ -20,7 +20,7 @@ class Movie {
     return{
       "id":id,
       "title":title,
-      "posterPath":posterpath,
+      "posterPath":posterPath,
       "rating":rating
     };
   }
@@ -29,6 +29,6 @@ class Movie {
     return Movie(
       id: map ["id"], 
       title: map["title"], 
-      posterpath: map["posterPath"]);
+      posterPath: map["posterPath"]);
   }
 }
