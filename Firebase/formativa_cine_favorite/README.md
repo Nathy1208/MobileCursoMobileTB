@@ -63,5 +63,41 @@ classDiagram
 ```
 
 2. *Diagrama Caso de Uso*
+Ação que os Atores odem fazer
 
+- Usuário (User):
+    - Registrar
+    - Login
+    - Logout
+    - Procurar filmes na API
+    - Salvar Filmes aos Favoritos
+    - Dar Nota aos Filmes Favoritos
+    - Remover Filme dos Favoritos
+
+```mermaid
+
+graph TD
+    subgraph "Ações"
+        ac1([Registrar])
+        ac2([Login])
+        ac3([Logout])
+        ac4([SearchMovie])
+        ac5([AddFavoriteMovie])
+        ac6([UpdateRatingMovie])
+        ac7([RemoverFavoriteMovie])
+    end
+
+    user([Usuário])
+
+    user --> ac1
+    user --> ac2
+
+    ac1 --> ac2
+    ac2 --> ac3
+    ac2 --> ac4
+    ac2 --> ac5
+    ac2 --> ac6
+    ac2 --> ac7
+    
+```
 3. *Diagrama de Fluxo*
