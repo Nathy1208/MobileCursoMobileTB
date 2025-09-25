@@ -63,7 +63,7 @@ classDiagram
 ```
 
 2. *Diagrama Caso de Uso*
-Ação que os Atores odem fazer
+Ação que os Atores ordem fazer
 
 - Usuário (User):
     - Registrar
@@ -98,6 +98,21 @@ graph TD
     ac2 --> ac5
     ac2 --> ac6
     ac2 --> ac7
-    
+
 ```
 3. *Diagrama de Fluxo*
+
+- Fluxo da Ação de Login
+
+```mermaid
+
+graph TD
+    A[Início] --> B{Login Usuário}
+    B --> C[Inserir Email e Senha]
+    C --> D{Validar as Credenciais}
+    D --> E[SIM]
+    D --> F[NÃO]
+    E --> G[HomePage]
+    F --> B
+
+``` 
