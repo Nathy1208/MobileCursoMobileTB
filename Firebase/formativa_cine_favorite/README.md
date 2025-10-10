@@ -120,7 +120,7 @@ graph TD
 ## Protipagem
 
 - Link dos Protótipos
-[https://www.figma.com/design/9etesquzO90YuyYN2ZQOOG/Cine_Favorite?t=DnJXAWbAfUbzQVBW-1](url)
+https://www.figma.com/design/9etesquzO90YuyYN2ZQOOG/Cine_Favorite?t=DnJXAWbAfUbzQVBW-1
 
 ## Codificação
 
