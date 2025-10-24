@@ -128,19 +128,6 @@ flutterfire configure
 
 ---
 
-### 🚀 2. Clonando e Instalando
-
-```bash
-# Clone o repositório
-git clone https://github.com/seuusuario/somativ-primeiro.git
-
-cd somativ-primeiro
-
-# Instale as dependências
-flutter pub get
-```
-
----
 
 ### 🔥 3. Configurando o Firebase
 
