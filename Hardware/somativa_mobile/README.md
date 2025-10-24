@@ -129,32 +129,6 @@ flutterfire configure
 ---
 
 
-### 🔥 3. Configurando o Firebase
-
-1. Acesse [Firebase Console](https://console.firebase.google.com/).  
-2. Crie um projeto chamado **somativ-primeiro**.  
-3. Adicione um app Android com o pacote do seu projeto (`com.example.primeiro`).  
-4. Baixe o arquivo `google-services.json` e coloque em:
-   ```
-   android/app/google-services.json
-   ```
-5. Configure o Gradle:
-   ```gradle
-   dependencies {
-       classpath 'com.google.gms:google-services:4.4.2'
-   }
-   ```
-   E em `app/build.gradle`:
-   ```gradle
-   apply plugin: 'com.google.gms.google-services'
-   ```
-
-6. Gere a configuração automática:
-   ```bash
-   flutterfire configure
-   ```
-
----
 
 ### 📍 4. Configurando Permissões
 
