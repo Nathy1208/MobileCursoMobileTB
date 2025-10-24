@@ -9,6 +9,8 @@ import 'controllers/auth_controller.dart';
 import 'controllers/point_controller.dart';
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(

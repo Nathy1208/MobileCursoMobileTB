@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import '../controllers/auth_controller.dart';
 
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -30,8 +32,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 setState((){ loading = true; error = null; });
                 final cred = await auth.signInWithNif(_nifCtrl.text.trim(), _passCtrl.text.trim());
                 setState((){ loading = false; });
-                if (cred != null) Navigator.pushReplacementNamed(context, '/home');
-                else setState((){ error = 'Falha ao autenticar. Verifique NIF/senha.'; });
+                if (cred != null) {
+                  Navigator.pushReplacementNamed(context, '/home');
+                } else {
+                  setState((){ error = 'Falha ao autenticar. Verifique NIF/senha.'; });
+                }
               },
               child: loading ? CircularProgressIndicator() : Text('Entrar'),
             ),

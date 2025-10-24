@@ -7,6 +7,8 @@ class HomeScreen extends StatelessWidget {
   final double workplaceLat = -23.5489; // exemplo: ajustar em settings
   final double workplaceLng = -46.6388;
 
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final auth = Provider.of<AuthController>(context);
